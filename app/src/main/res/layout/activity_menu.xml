@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gym_background_blurred_dark"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical"
+    android:paddingHorizontal="10dp"
+    tools:context=".Menu">
+
+    <Button
+        android:id="@+id/btnWorkout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#EAE7E8"
+        android:fontFamily="@font/poppins"
+        android:text="WORKOUT"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:cornerRadius="1dp" />
+
+    <Button
+        android:id="@+id/btnWorkoutCalendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#EAE7E8"
+        android:fontFamily="@font/poppins"
+        android:text="WORKOUT CALENDAR"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:cornerRadius="1dp" />
+
+    <Button
+        android:id="@+id/btnMotivations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#EAE7E8"
+        android:fontFamily="@font/poppins"
+        android:text="MOTIVATIONS"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:cornerRadius="1dp" />
+
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layoutView2"
+    android:orientation="vertical"
+    android:background="@drawable/gym_background_blurred_dark"
+    tools:context=".AddWorkout">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E8E8E8"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="Add Workout"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="71dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_height="match_parent">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tvWorkoutName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:hint="Workout Name" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:id="@+id/btnSelectDate"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#FFFFFF"
+                android:fontFamily="@font/poppins"
+                android:text="SELECT WORKOUT DATE"
+                android:textAlignment="textStart"
+                android:textColor="#101010"
+                app:cornerRadius="10dp"
+                app:icon="@drawable/baseline_calendar_month_24"
+                app:iconGravity="textStart"
+                app:iconPadding="10dp"
+                app:iconSize="30dp"
+                app:iconTint="#191919"
+                app:strokeColor="#272727"
+                app:strokeWidth=".75dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tvTargetMuscle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:hint="Target Muscle" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tvDayCount"
+                    android:layout_width="match_parent"
+                    android:inputType="number"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:hint="DAY COUNT" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnSaveWorkout"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:backgroundTint="#0E853E"
+                android:fontFamily="@font/poppins_medium"
+                android:text="SAVE WORKOUT"
+                android:textColor="#EDEDED"
+                android:textSize="20sp"
+                app:cornerRadius="2dp" />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
